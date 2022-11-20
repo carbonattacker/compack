@@ -1,4 +1,4 @@
-import { Home, BtnComponent } from '../screens'
+import { Home, BtnComponent, InputComponent } from '../screens'
 
 const routes = [
     {
@@ -12,6 +12,12 @@ const routes = [
         name: 'Buttons',
         ref: '/buttons',
         Component: BtnComponent
+    },
+    {
+        id: 2,
+        name: 'Input',
+        ref: '/input',
+        Component: InputComponent
     }
 ]
 
