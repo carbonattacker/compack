@@ -1,5 +1,5 @@
-import Primary from './primary'
+// import Primary from './primary'
 
-export {
-    Primary
-}
+// export {
+//     Primary
+// }

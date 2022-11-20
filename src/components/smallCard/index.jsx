@@ -1,9 +1,12 @@
+import './styles.scss'
 
-
-const SmallCard = () => {
+const SmallCard = (props) => {
+    const { label } = props 
     return (
-        <div>
-            Hello World
+        <div className="card-one">
+            {label ? label : 'Label'}
         </div>
     )
 }
+
+export default SmallCard

@@ -1,0 +1,24 @@
+
+$heading_size: 18px;
+$heading_weight: bold;
+
+
+.home-base {
+    display: block;
+}
+
+.home-cont-one {
+    padding: 4% 10%;
+}
+
+.home-flex-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    gap: 10px;
+}
+
+.heading-one {
+    font-size: $heading_size;
+    font-weight: $heading_weight;
+}
