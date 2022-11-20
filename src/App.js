@@ -1,20 +1,18 @@
 import './App.scss';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import routes from './config/routes';
 
 function App() {
   return (
-    <div className='main-root'>
-      <div className='header-root'>
-        Header
-      </div>
-      <div className='base-root'>
-        <div className='sidebar-root'>
-          Sidebar
-        </div>
-        <div className='body-root'>
-          Body
-        </div>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {routes?.length && routes?.map((r) => {
+          return (
+            <Route key={r?.id} path={r?.ref} element={<r.Component />} />
+          )
+        })}
+      </Routes>
+    </BrowserRouter>
   );
 }
 
